@@ -1,0 +1,46 @@
+:root {
+    --color-bg: hsl(0, 0%, 96%);
+}
+
+body {
+    width: 100dvw;
+    height: 100dvh;
+    margin: 0;
+    background: var(--color-bg);
+    font-size: 16px;
+    display: grid;
+    place-items: center;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    grid-gap: 1rem;
+}
+
+main > img {
+    width: 100%;
+    height: auto;
+    max-width: 12.5rem;
+}
+
+main section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+}
+
+main section a {
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: opacity .2s ease;
+}
+
+main section a img {
+    width: inherit;
+    height: inherit;
+}
+
+main section a:hover {
+    opacity: .4;
+}
