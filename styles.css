@@ -3,8 +3,8 @@
 }
 
 body {
-    width: 100dvw;
-    height: 100dvh;
+    width: 100vw;
+    min-height: 100vh;
     margin: 0;
     background: var(--color-bg);
     font-size: 16px;
@@ -15,19 +15,18 @@ body {
 main {
     display: grid;
     place-items: center;
-    grid-gap: 1rem;
+    gap: 1rem;
 }
 
 main > img {
     width: 100%;
-    height: auto;
     max-width: 12.5rem;
 }
 
 main section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 2rem;
+    gap: 2rem;
 }
 
 main section a {
@@ -37,8 +36,8 @@ main section a {
 }
 
 main section a img {
-    width: inherit;
-    height: inherit;
+    width: 100%;
+    height: 100%;
 }
 
 main section a:hover {
