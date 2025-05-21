@@ -1,5 +1,6 @@
 :root {
     --color-bg: hsl(0, 0%, 96%);
+    --color-text: hsl(218, 16%, 23%);
 }
 
 body {
@@ -10,6 +11,7 @@ body {
     font-size: 16px;
     display: grid;
     place-items: center;
+    font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
 main {
@@ -42,4 +44,36 @@ main section a img {
 
 main section a:hover {
     opacity: .4;
+}
+
+.github, .github img {
+    border-radius: 50%;
+}
+
+.wip {
+    margin: 0;
+    text-align: center;
+    color: var(--color-text);
+}
+
+footer {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    font-size: 12px;
+    color: var(--color-text);
+}
+
+footer p a , footer p a img {
+    border-radius: 50%;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
 }
